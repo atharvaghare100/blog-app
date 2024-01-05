@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles1.css">
+  <title>Blog List</title>
+</head>
+<body>
+  <h1>Blog List</h1>
+
+  <div class="blog-list">
+    <% blogPosts.forEach(post => { %>
+      <div class="blog-post">
+        <h3><%= post.title %></h3>
+        <p><%= post.content %></p>
+      </div>
+    <% }); %>
+  </div>
+</body>
+</html>
